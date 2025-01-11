@@ -85,6 +85,7 @@ production:
   primary: &primary_production
     <<: *default
     database: phu_web_production
+    url: <%= ENV['DATABASE_URL'] %>
     username: phu_web
     password: <%= ENV["PHU_WEB_DATABASE_PASSWORD"] %>
   cache:
